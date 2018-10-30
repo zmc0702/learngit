@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>哆啦A梦梦</title>
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			/*.head1{
+				width:380px;
+				height:350px;
+				position:absolute;left:100px;
+				background-color:rgb(22,159,233);
+				border-radius:165px 165px 180px 180px;
+				-moz-border-radius:165px 165px 180px 180px;
+				-webkit-border-radius:165px 165px 180px 180px;
+				box-shadow:0px 0px 60px 5px white inset;
+						
+			}*/
+			.head2{
+				width:370px;
+				height:340px;
+				position:absolute;top:35px;left:105px;
+				background-color:rgb(22,159,233);
+				border-radius:170px;
+				-moz-border-radius:165px 165px 180px 180px;
+				-webkit-border-radius:165px 165px 180px 180px;
+				box-shadow:0px 15px 30px -5px whitesmoke inset;
+			}
+			.yao1{
+				width:280px;
+				height:150px;
+				position:absolute;top:330px;left:150px;
+				background-color:rgb(22,159,233);
+				box-shadow:0px 0px 5px rgb(255,255,255) inset;				
+			}
+			.tui1{
+				width:140px;
+				height:70px;
+				background-color:rgb(22,159,233);
+				border-radius:3px 0px 30px 15px;
+				position:absolute;top:470px;left:145px;
+				transform:rotate(8deg);
+				-moz-transform:rotate(8deg);
+				-webkit-transform:rotate(8deg);	
+				box-shadow:3px 0px 5px -4px rgb(255,255,255) inset;			
+			}
+			.tui2{
+				width:140px;
+				height:70px;
+				background-color:rgb(22,159,233);
+				border-radius:0px 3px 15px 30px;
+				position:absolute;top:470px;left:295px;
+				transform:rotate(-8deg);
+				-moz-transform:rotate(-8deg);
+				-webkit-transform:rotate(-8deg);
+				box-shadow:-3px 0px 5px -4px rgb(255,255,255) inset;
+			}
+			.tui3{
+				width:20px;
+				height:40px;
+				background-color:rgb(22,159,233);
+				position:absolute;top:470px;left:280px;
+			}
+			.tui4{
+				width:25px;
+				height:25px;
+				border-radius:12.5px;
+				background-color:white;
+				position:absolute;top:508px;left:277.5px;
+				box-shadow:0px -2px 4px -1px whitesmoke;
+			}
+			.jiaoLeft{
+				width:150px;
+				height:50px;
+				position:absolute;left:135px;top:520px;
+				background-color:white;
+			    border-radius:20px 10px 40px 40px;
+				-moz-border-radius:20px 10px 40px 40px;
+				-webkit-border-radius:20px 10px 40px 40px;
+				box-shadow:0px 0px 12px rgb(160,158,163) inset;				
+			}
+			.jiaoRight{
+				width:150px;
+				height:50px;
+				position:absolute;left:295px;top:520px;
+				background-color:white;
+			    border-radius:10px 20px 40px 40px;
+				-moz-border-radius:10px 20px 40px 40px;
+				-webkit-border-radius:10px 20px 40px 40px;
+				box-shadow:0px 0px 12px rgb(160,158,163) inset;
+				
+			}
+			.shouLeft{
+				width:70px;
+				height:50px;
+				background-color:rgb(22,159,233);
+				border-radius:15px 40px 0px 5px;
+				position:absolute;top:330px;left:120px;
+				transform:rotate(-30deg);
+				-moz-transform:rotate(-30deg);
+				-webkit-transform:rotate(-30deg);
+			}
+			.shouLeft1{
+				width:110px;
+				height:48px;
+				background-color:rgb(22,159,233);				
+				position:absolute;top:380px;left:50px;
+				transform:rotate(-50deg);
+				-moz-transform:rotate(-50deg);
+				-webkit-transform:rotate(-50deg);
+			}
+			.shouLeft2{
+				width:60px;
+				height:60px;
+				background-color:azure;	
+				border-radius:30px;			
+				position:absolute;top:410px;left:43px;
+				box-shadow:0px 0px 8px rgb(160,158,163) inset;
+			}
+			.shouRight{
+				width:70px;
+				height:50px;
+				background-color:rgb(22,159,233);
+				border-radius:0px 5px 20px 0px;
+				position:absolute;top:335px;left:395px;
+				transform:rotate(-30deg);
+				-moz-transform:rotate(-30deg);
+				-webkit-transform:rotate(-30deg);
+			}
+			.shouRight1{
+				width:110px;
+				height:48px;
+				background-color:rgb(22,159,233);
+				position:absolute;top:295px;left:430px;
+				transform:rotate(-40deg);
+				-moz-transform:rotate(-40deg);
+				-webkit-transform:rotate(-40deg);
+			}
+			.shouRight2{
+				width:60px;
+				height:60px;
+				background-color:azure;
+				border-radius:30px;
+				position:absolute;top:250px;left:500px;
+				box-shadow:0px 0px 8px rgb(160,158,163) inset;
+			}
+			.nian{
+				width:330px;
+				height:250px;
+				background-color:whitesmoke;
+				border-radius:135px;
+				position:absolute;top:90px;left:125px;
+				z-index:;
+				box-shadow:0px 0px 10px ghostwhite;
+			}
+			.yanLeft{
+				width:60px;
+				height:66px;
+				background-color:white;
+				position:absolute;top:65px;left:231px;
+				border-radius:40px;
+				transform:rotate(20deg);
+				-moz-transform:rotate(20deg);
+				-webkit-transform:rotate(20deg);
+				z-index:2;
+				box-shadow:0px 1px 0.5px gray;
+			}
+			.yanLeft1{
+				width:25px;
+				height:25px;
+				background-color:black;
+				border-radius:12.5px;
+				position:absolute;top:95.5px;left:258px;
+				z-index:2;
+			}
+			.yanLeft2{
+				width:5px;
+				height:5px;
+				background-color:whitesmoke;
+				border-radius:2.5px;
+				position:absolute;top:103px;left:264px;
+				z-index:2;
+			}
+			.yanRight{
+				width:60px;
+				height:66px;
+				background-color:white;
+				position:absolute;top:65px;left:289px;
+				border-radius:40px;
+				transform:rotate(-20deg);
+				-moz-transform:rotate(-20deg);
+				-webkit-transform:rotate(-20deg);
+				z-index:2;
+				box-shadow:0px 1px 0.5px gray;
+			}
+			.yanRight1{
+				width:25px;
+				height:25px;
+				background-color:black;
+				border-radius:12.5px;
+				position:absolute;top:95.5px;left:297px;
+				z-index:2;
+			}
+			.yanRight2{
+				width:5px;
+				height:5px;
+				background-color:whitesmoke;
+				border-radius:2.5px;
+				position:absolute;top:103px;left:311px;
+				z-index:2;
+			}
+			
+			.bozi{
+				width:300px;
+				height:15px;
+				background-color:rgb(207,48,84);
+				position:absolute;top:325px;left:140px;
+				border-radius:7.5px;
+				z-index:;
+				box-shadow:0px 2px 5px 3px rgb(128,90,84) inset ;
+			}
+			.bozi1{
+				width:30px;
+				height:30px;
+				border-radius:15px;
+				background-color:rgb(253,190,2);
+				position:absolute;top:330px;left:275px;
+				z-index:;				
+				box-shadow:-5px 7px 5px lightsteelblue;
+			}
+			.bozi2{
+				width:4px;
+				height:4px;
+				border-radius:2px;
+				background-color:rgb(123,70,4);
+				position:absolute;top:343px;left:288px;
+				z-index:;
+			}
+			.bozi3{
+				width:2px;
+				height:15px;
+				background-color:rgb(123,70,4);
+				position:absolute;top:345px;left:289px;
+				z-index:;
+			}
+			.bizi{
+				width:35px;
+				height:35px;
+				background-color:red;
+				border-radius:17.5px;
+				position:absolute;top:122px;left:272px;
+				z-index:2;
+			}
+			.bizi1{
+				width:4px;
+				height:4px;
+				border-radius:2px;
+				background-color:white;
+				position:absolute;top:129px;left:283px;
+				z-index:2;
+				box-shadow:0px 0px 0.2px 0.2px red inset;
+			}
+			.huzi1{
+				width:90px;
+				height:3px;
+				background-color:black;
+				position:absolute;top:135px;left:160px;
+				z-index:2;
+				transform:rotate(5deg);
+			}
+			.huzi2{
+				width:90px;
+				height:3px;
+				background-color:black;
+				position:absolute;top:135px;left:330px;
+				z-index:2;
+				transform:rotate(-5deg);
+			}
+			.huzi3{
+				width:100px;
+				height:3px;
+				background-color:black;
+				position:absolute;top:155px;left:150px;
+				z-index:2;
+				transform:rotate(2deg);
+			}
+			.huzi4{
+				width:100px;
+				height:3px;
+				background-color:black;
+				position:absolute;top:155px;left:330px;
+				z-index:2;
+				transform:rotate(-2deg);
+			}
+			.huzi5{
+				width:90px;
+				height:3px;
+				background-color:black;
+				position:absolute;top:175px;left:160px;
+				z-index:2;
+				transform:rotate(-5deg);
+			}
+			.huzi6{
+				width:90px;
+				height:3px;
+				background-color:black;
+				position:absolute;top:175px;left:330px;
+				z-index:2;
+				transform:rotate(5deg);
+			}
+			.xiong{
+				width:200px;
+				height:170px;
+				background-color:whitesmoke;
+				position:absolute;top:315px;left:190px;
+				border-radius:85px;
+				z-index:;
+				box-shadow:0px 0px 10px ghostwhite;
+				
+			}
+			.xiong1{
+				width:130px;
+				height:130px;
+				background-color:whitesmoke;
+				position:absolute;top:345px;left:225px;
+				border-radius:65px;
+				z-index:;
+				box-shadow:-0.5px 2px 4px rgb(160,158,163);
+			}
+			.xiong2{
+				width:150px;
+				height:75px;
+				background-color:whitesmoke;
+				position:absolute;top:335px;left:215px;
+				z-index:;
+			}
+			.xiong3{
+				width:130px;
+				height:2px;
+				background-color:whitesmoke;
+				position:absolute;top:410px;left:225px;
+				z-index:;
+				box-shadow:0px -1.5px 5px -3px rgb(160,158,163) inset;
+			}
+			.zuiba{
+				width:230px;
+				height:230px;
+				background-color:red;
+				position:absolute;top:90px;left:175px;
+				border-radius:115px;
+				z-index:;
+				box-shadow:0px -1px 4px 1px brown inset;
+			}
+			.zuiba1{
+				width:230px;
+				height:130px;
+				background-color:whitesmoke;
+				position:absolute;top:90px;left:175px;
+				border-radius:80px 80px 0px 0px;
+				z-index:;
+			}
+			.zuiba2{
+				width:130px;
+				height:70px;
+				background-color:ghostwhite;
+				position:absolute;top:160px;left:160px;
+				z-index:;
+				transform:rotate(-5deg);
+				box-shadow:0px -2px 5px 1px gainsboro inset;
+			}
+			.zuiba22{
+				width:70px;
+				height:70px;
+				background-color:ghostwhite;
+				border-radius:30px;
+				position:absolute;top:165px;left:130px;
+				box-shadow:1px -2px 3px -1px gainsboro inset;
+				z-index:;
+			}
+			.zuiba3{
+				width:130px;
+				height:70px;
+				background-color:ghostwhite;
+				position:absolute;top:160px;left:290px;
+				z-index:;
+				transform:rotate(5deg);
+				box-shadow:0px -2px 5px 1px gainsboro inset;
+			}
+			.zuiba33{
+				width:70px;
+				height:70px;
+				background-color:ghostwhite;
+				border-radius:30px;
+				position:absolute;top:165px;left:380px;
+				box-shadow:-1px -2px 3px -1px gainsboro inset;
+				z-index:;
+			}
+			.lunkongLeft1{
+				width:110px;
+				height:60px;
+				background-color:ghostwhite;
+				position:absolute;top:160px;left:180px;
+				z-index:;
+				transform:rotate(-5deg);
+				box-shadow:0px -4px 5px 0px gainsboro inset;
+			}
+			.lunkongLeft2{
+				width:60px;
+				height:60px;
+				background-color:ghostwhite;
+				border-radius:25px;
+				position:absolute;top:165px;left:145px;
+				box-shadow:3px -4px 5px -2px gainsboro inset;
+				z-index:;
+			}
+			.lunkongRight1{
+				width:110px;
+				height:60px;
+				background-color:ghostwhite;
+				position:absolute;top:160px;left:290px;
+				z-index:;
+				transform:rotate(5deg);
+				box-shadow:0px -4px 5px 0px gainsboro inset;
+			}
+			.lunkongRight2{
+				width:60px;
+				height:60px;
+				background-color:ghostwhite;
+				border-radius:25px;
+				position:absolute;top:165px;left:370px;
+				box-shadow:-3px -4px 5px -2px gainsboro inset;
+				z-index:;
+			}
+			.lunkongzj{
+				width:5px;
+				height:60px;
+				background-color:gainsboro;
+				border-radius:5px;
+				position:absolute;top:155px;left:287.5px;
+				z-index:;
+				opacity:0.6;
+			}
+			.shetou{
+				width:1px;
+				height:15px;
+				background-color:red;				
+				position:absolute;top:293px;left:242px;
+				z-index:;
+				box-shadow:-3px 0px 1px 1px rgb(184,71,91);
+			}
+			.shetou3{
+				width:30px;
+				height:30px;
+				border-radius:15px;
+				background-color:red;	
+				position:absolute;top:282px;left:240px;
+				box-shadow:-3px -1.5px 2px 0.5px rgb(184,71,91);
+				
+			}
+			.shetou1{
+				width:1px;
+				height:15px;
+				background-color:red;
+				position:absolute;top:293px;left:338px;
+				z-index:;
+				box-shadow:3px 0px 1px 1px rgb(184,71,91);
+			}
+			.shetou4{
+				width:30px;
+				height:30px;
+				border-radius:15px;
+				background-color:red;	
+				position:absolute;top:282px;left:310px;
+				box-shadow:3px -1.5px 2px 0.5px rgb(184,71,91);
+				
+			}
+			.shetou2{
+				width:90px;
+				height:90px;
+				border-radius:45px;
+				background-color:red;
+				position:absolute;top:225px;left:245px;
+				box-shadow:0px 4px 5px -2px rgb(184,71,91);
+			}
+			.shetou5{
+				width:90px;
+				height:90px;
+				border-radius:45px;
+				background-color:red;
+				position:absolute;top:225px;left:245px;
+				box-shadow:0px -2px 5px 1px rgb(184,71,91) inset;
+			}
+			.shetou6{
+				width:100px;
+				height:50px;			
+				background-color:red;
+				position:absolute;top:230px;left:245px;
+				
+			}
+			/*.shetou7{
+				width:20px;
+				height:20px;
+			    border-radius:10px;
+				background-color:red;
+				position:absolute;top:280px;left:242px;
+				box-shadow:-3px -1.5px 2px 0.5px rgb(184,71,91) inset;
+				transform:rotate(-110deg);
+			}
+			.shetou8{
+				width:20px;
+				height:20px;
+			    border-radius:10px;
+				background-color:red;
+				position:absolute;top:280px;left:320px;
+				box-shadow:-3px -1.5px 2px 0.5px rgb(184,71,91) inset;
+				transform:rotate(-100deg);
+			}*/
+			.shetou9{
+				width:90px;
+				height:50px;
+			    border-radius:16px;
+				background-color:red;
+				position:absolute;top:234px;left:245px;
+				box-shadow:0px 8px 8px -5px rgb(184,71,91) ;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<input type="color" />
+		<div class="head1"></div>
+		<div class="head2"></div>
+		<div class="yao1"></div>
+		<div class="tui1"></div>
+		<div class="tui2"></div>
+		<div class="tui3"></div>
+		<div class="tui4"></div>
+		<div class="jiaoLeft"></div>		
+		<div class="jiaoRight"></div>
+		<div class="shouLeft"></div>
+		<div class="shouLeft1"></div>
+		<div class="shouLeft2"></div>
+		<div class="shouRight"></div>
+		<div class="shouRight1"></div>
+		<div class="shouRight2"></div>
+		<div class="nian"></div>
+		<div class="yanLeft"></div>
+		<div class="yanLeft1"></div>
+		<div class="yanLeft2"></div>
+		<div class="yanRight"></div>
+		<div class="yanRight1"></div>
+		<div class="yanRight2"></div>
+		<div class="bizi"></div>
+		<div class="bizi1"></div>
+		<div class="huzi1"></div>
+		<div class="huzi2"></div>
+		<div class="huzi3"></div>
+		<div class="huzi4"></div>
+		<div class="huzi5"></div>
+		<div class="huzi6"></div>
+		
+		<div class="xiong"></div>
+		<div class="xiong1"></div>
+		<div class="xiong2"></div>
+		<div class="xiong3"></div>
+		<div class="bozi"></div>
+		<div class="bozi1"></div>
+		<div class="bozi2"></div>
+		<div class="bozi3"></div>
+		<div class="zuiba"></div>
+		<div class="zuiba1"></div>
+		<div class="zuiba2"></div>
+		<div class="zuiba22"></div>
+		<div class="zuiba3"></div>
+		<div class="zuiba33"></div>
+		<div class="lunkongLeft1"></div>
+		<div class="lunkongLeft2"></div>
+		<div class="lunkongRight1"></div>
+		<div class="lunkongRight2"></div>
+		<div class="lunkongzj"></div>
+		<div class="shetou"></div>
+		<div class="shetou1"></div>
+		<div class="shetou3"></div>
+		<div class="shetou4"></div>
+		<div class="shetou2"></div>
+		<div class="shetou5"></div>
+		<div class="shetou6"></div>
+		<div class="shetou7"></div>
+		<div class="shetou8"></div>
+		<div class="shetou9"></div>
+	</body>
+</html>
