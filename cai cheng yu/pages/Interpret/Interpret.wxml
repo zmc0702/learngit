@@ -1,0 +1,17 @@
+<!--pages/Interpret/Interpret.wxml-->
+
+<view class="center">
+     <view class="info">
+        <view class="header">lóng fèng chéng xiáng</view>
+        <view class="title">鸡飞狗跳</view>
+        <view class="coption">【解释】把鸡吓得飞起来，把狗吓得到处乱跳。形容惊慌得乱成一团。</view>
+        <view class="coption">【茅盾】《锻炼》:“然而陈克明却在这里想象，一方面疑神疑鬼，又一方面畏惧怨恨所造成的鸡飞狗跳、人人自危的情形。”</view>
+     </view>
+     <view class="bottom">
+        <view class="money">获得金币 + 5</view>
+        <view class="forshow">
+          <button open-type='share'>分享</button>
+          <button bindtap='space'>下一关</button>
+        </view>
+     </view>
+</view>

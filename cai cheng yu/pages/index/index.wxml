@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="center">
+    <view class="info">
+       <button class="fixd" open-type='contact'>客服</button>
+       <view class="top">
+          <view class="top-left">第{{numberID}}关</view>
+          <view class="top-left" bindtap='play'> 金钱 {{numberMoney}}</view>         
+       </view>
+       <view class="show">
+          <view  wx:for="{{text}}" wx:for-index="idx" wx:for-item="value">
+            <text class='show_{{idx}}' bindtap='backText' data-index='{{idx}}' id='{{value.id}}'>{{value.name}}   </text>
+        </view>   
+       </view>
+       <view class="select">
+          <button class="select-pro" bindtap='locaAlert'>提示</button>
+          <button class="select-pro" open-type='share'>求助</button>
+          <button class="select-pro" open-type='share'>分享</button>
+       </view>
+       <view class="search" >
+          <view wx:for="{{list.fourShow}}" wx:for-index="idx" wx:for-item="value" >
+          <button bindtap='goText' data-index='{{idx}}' id="{{idx}}" >{{value}}</button>                
+          </view>
+       </view>
+    </view>
+</view>

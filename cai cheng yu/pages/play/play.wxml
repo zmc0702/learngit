@@ -1,0 +1,8 @@
+<!--pages/play/play.wxml-->
+<view class="centent">
+  <view class="play">支付页面</view>
+  <view class="button">
+    <button bindtap='cancel'>取消</button>
+    <button bindtap='confirm'>确定</button>
+  </view>
+</view>

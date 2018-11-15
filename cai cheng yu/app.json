@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/play/play",
+    "pages/Interpret/Interpret"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "【学通】 疯狂猜成语",
+    "navigationBarTextStyle":"black"
+  }
+}
