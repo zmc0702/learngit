@@ -1,0 +1,119 @@
+.tup3a{
+	height:938px;
+	width:1600px;
+	position:relative;left:40px;
+	font-size:13px;
+	font-family:arial;
+	/*border:1px solid red;*/
+	/*display:none;*/
+}
+.tup3a h3{
+	font-size:20px;
+	font-family:'Economica', sans-serif;
+	text-indent:25px;
+}
+.tup3a p{
+	display:block;
+	padding-top:10px;
+}
+.textcolor{
+	font-weight:700;
+	color:inherit;
+}
+.tup3a1{
+	width:300px;
+	height:555px;
+	border:2px solid red;
+	position:absolute;top:45px;left:260px;
+	background-color;
+}
+.tup3a1 img{
+	padding-left:25px;
+}
+.tup3a1 a{
+	display:block;
+	font-size:20px;
+	background:#A9A9A9;
+	color:white;
+	width:70px;
+	line-height:30px;
+	margin:10px 25px;
+	text-align:center;
+	text-decoration:none;
+}
+.tup3a11{
+	width:240px;
+	height:260px;
+	/*border:1px solid red;*/
+	margin-left:25px;
+}
+.tup3a2{
+	width:300px;
+	height:555px;
+	border:2px solid red;
+	position:relative;top:45px;left:600px;
+}
+.tup3a21{
+	width:12px;
+	height:300px;
+	position:absolute;top:70px;left:25px;
+	font-size:20px;
+	opacity:0.2;
+}
+.tup3a211{
+	padding-bottom:112px;
+	font-weight:700;
+}
+.tup3a2111{
+	padding-bottom:98px;
+	font-weight:700;
+}
+.tup3a22{
+	width:255px;
+	height:500px;
+	position:relative;left:52px;
+}
+.tup3a3{
+	width:300px;
+	height:555px;
+	border:2px solid red;
+	position:absolute;top:45px;left:940px;
+}
+.tup3a31{
+    width:300px;
+    height:450px;
+    position:relative;	
+}
+.tup3a3 a{
+	display:block;
+	padding:0px 0px 20px 23px;
+	float:left;
+}
+.tup3a31 img{
+	display:block;
+	width:117px;
+	height:118px;
+}
+.tup3a4{
+	width:980px;
+	height:170px;
+	position:absolute;left:260px;top:630px;
+	border:2px solid yellow;
+	padding-top:80px;
+}
+.tup3a41{
+	width:297px;
+	height:200px;
+	background:url(../img/quotes_bg.png) no-repeat;
+	float:left;
+	margin-left:25px;
+	margin-top:-40px;
+	/*border:1px solid red;*/
+}
+.tup3a41 p{
+	display:block;
+	padding:10px 0px 0px 20px;
+}
+.tup3a41 h4{
+	text-indent:20px;
+}

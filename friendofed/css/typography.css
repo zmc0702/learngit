@@ -1,0 +1,53 @@
+/*********定义版式******************/
+body{
+	font-size:76%;
+	font-family:"Helvetica","Arial",sans-serif;
+}
+body *{
+	font-size:20px;
+}
+a{
+	font-weight:bold;
+	text-decoration:none;
+}
+header nav{
+	font-family:"Lucida Grande","helvetica","arial",sans-serif;
+}
+header nav a{
+	text-decoration:none;
+	font-weight:bold;
+}
+article{
+	line-height:25px;
+}
+article p{
+	margin:20px 0px;
+}
+h1{
+	font-family:"georgia","times new roman",sans-serif;
+    
+}
+h2{
+	font-family:"georgia","times new roman",sans-serif;
+    margin-top:20px;
+}
+h3{
+	font-family:"georgia","times new roman",sans-serif;
+	margin-top:20px;
+}
+#imagegallery li{
+	list-style-type:none;
+}
+textarea{
+	font-family:"helvetica","Arial",sans-serif;
+}
+dt{
+	margin-right:1em;
+}
+dd{
+	margin-right:2em;
+}
+img#placeholder{
+	width:200px;
+	height:200px;
+}

@@ -1,0 +1,92 @@
+.tup3d{
+	width:940px;
+	height:876px;
+	border:1.5px solid red;
+	position:relative;left:310px;top:45px;
+	padding-left:20px;
+	margin-bottom:50px;
+	background:ghostwhite;
+	/*display:none;*/
+}
+.tup3d iframe{
+	width:900px;
+	height:300px;
+	border:1.5px solid yellow;
+}
+.tup3d2{
+	width:300px;
+	height:322px;
+	font-size:12px;
+	font-family:"宋体" sans-serif;
+	
+}
+.tup3d21{
+	height:74px;
+	position:relative;
+	margin-bottom:40px;
+}
+.tup3d21 p{
+	font-size:10px;
+	line-height:8px;
+}
+.tup3d21, .tup3d3 h4{
+	font-size:18px;
+}
+.tup3d22{
+	width:300px;
+	height:90px;
+	position:relative;
+	margin-bottom:20px;
+}
+.tup3d22 p{
+	line-height:8px;
+}
+.tup3d22 p span{
+	width:70px;
+	display:inline-block;
+}
+.tup3d222{
+	width:300px;
+	height:72px;
+	position:relative;
+	margin-bottom:20px;
+}
+.tup3d222 a{
+	color:red;
+	text-decoration:none;
+}
+.tup3d222 p{
+	padding-bottom:10px;
+}
+.tup3d3{
+	width:528px;
+	height:378px;
+	position:absolute;left:400px;top:380px;
+	
+}
+.tup3d3 input{
+	width:158px;
+	margin-bottom:8px;
+	padding:5px;
+	padding-left:5.5px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	border:2px solid gainsboro;
+}
+.tup3d3 textarea{
+	width:518px;
+	height:200px;
+	resize:none;
+	border:2px solid gainsboro;
+}
+.tup3d31 a{
+	display:block;
+	float:right;
+	width:70px;
+	text-decoration:none;
+	background:#DCDCDC;
+	color:white;
+	text-align:center;
+	padding:5px;
+	margin:15px 2px 5px 5px;
+}

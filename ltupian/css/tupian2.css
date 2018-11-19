@@ -1,0 +1,16 @@
+.tup3b{
+	width:940px;
+	height:563px;
+	position:relative;left:320px;top:45px;
+	border:2px solid red;
+	margin-bottom:50px;
+	/*display:none;*/
+}
+.tup3b h3{
+	text-indent:22px;
+}
+.tup3b1{
+	width:898px;
+	height:464px;
+	margin-left:22px;
+}
